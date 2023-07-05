@@ -3,9 +3,9 @@
 #include <time.h>
 #include <unistd.h>
 #include <pthread.h>
-#include "c_queue.h"
-#include "shared.h"
-#include "log.h"
+#include "../include/c_queue.h"
+#include "../include/shared.h"
+#include "../include/log.h"
 
 /* Adds customers to queue */
 void *customerThread(void *arg) {

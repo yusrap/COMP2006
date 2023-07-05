@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <pthread.h>
 #include <string.h>
-#include "c_queue.h"
-#include "shared.h"
-#include "log.h"
+#include "../include/c_queue.h"
+#include "../include/shared.h"
+#include "../include/log.h"
 
 /* teller function to serve customers */
 void *tellerThread(void *arg) {

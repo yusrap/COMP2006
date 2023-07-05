@@ -1,31 +1,29 @@
 CC = gcc
 CFLAGS = -Wall -Wno-return-type -Wno-error=return-type -pedantic -g
 EXEC = cq
-OBJ = cq.o generate_c_file.o c_queue.o customer.o teller.o log.o
+OBJ = src/cq.o src/generate_c_file.o src/c_queue.o src/customer.o src/teller.o src/log.o
 
 $(EXEC): $(OBJ)
 	$(CC) $(OBJ) -pthread -o $(EXEC)
 
-cq.o: cq.c generate_c_file.h c_queue.h customer.h teller.h shared.h
-	$(CC) $(CFLAGS) -pthread -c cq.c
+src/cq.o: src/cq.c include/generate_c_file.h include/c_queue.h include/customer.h include/teller.h include/shared.h
+	$(CC) $(CFLAGS) -pthread -c src/cq.c -o src/cq.o
 
-customer.o: customer.c customer.h c_queue.h shared.h log.h
-	$(CC) $(CFLAGS) -pthread -c customer.c
+src/customer.o: src/customer.c include/customer.h include/c_queue.h include/shared.h include/log.h
+	$(CC) $(CFLAGS) -pthread -c src/customer.c -o src/customer.o
 
-c_queue.o: c_queue.c c_queue.h 
-	$(CC) $(CFLAGS) -pthread -c c_queue.c
+src/c_queue.o: src/c_queue.c include/c_queue.h 
+	$(CC) $(CFLAGS) -pthread -c src/c_queue.c -o src/c_queue.o
 
-generate_c_file.o: generate_c_file.c generate_c_file.h 
-	$(CC) $(CFLAGS) -pthread -c generate_c_file.c
+src/generate_c_file.o: src/generate_c_file.c include/generate_c_file.h 
+	$(CC) $(CFLAGS) -pthread -c src/generate_c_file.c -o src/generate_c_file.o
 
-teller.o: teller.c teller.h c_queue.h shared.h log.h
-	$(CC) $(CFLAGS) -pthread -c teller.c 
+src/teller.o: src/teller.c include/teller.h include/c_queue.h include/shared.h include/log.h
+	$(CC) $(CFLAGS) -pthread -c src/teller.c -o src/teller.o 
 
-log.o: log.c log.h
-	$(CC) $(CFLAGS) -pthread -c log.c 
+src/log.o: src/log.c include/log.h
+	$(CC) $(CFLAGS) -pthread -c src/log.c -o src/log.o
 
 clean:
-	del -f *.exe
-	del -f *.o
-
-	
+	@for %%i in (src\*.o) do @del %%i
+	@del /Q *.exe

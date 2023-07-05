@@ -2,11 +2,11 @@
 #include <stdlib.h>
 #include <unistd.h> 
 #include <pthread.h> 
-#include "generate_c_file.h"
-#include "c_queue.h"
-#include "customer.h"
-#include "teller.h"
-#include "shared.h"
+#include "../include/generate_c_file.h"
+#include "../include/c_queue.h"
+#include "../include/customer.h"
+#include "../include/teller.h"
+#include "../include/shared.h"
 
 int main(int argc, char *argv[]) {
 
