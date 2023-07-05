@@ -1,0 +1,174 @@
+
+-----------------------------------------------------------------------
+1: I
+Arrival Time: 11:37:30
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+2: D
+Arrival Time: 11:37:31
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+3: I
+Arrival Time: 11:37:32
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+4: D
+Arrival Time: 11:37:33
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+5: I
+Arrival Time: 11:37:34
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+6: W
+Arrival Time: 11:37:35
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+7: D
+Arrival Time: 11:37:36
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+8: I
+Arrival Time: 11:37:37
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+9: D
+Arrival Time: 11:37:38
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+10: W
+Arrival Time: 11:37:39
+-----------------------------------------------------------------------
+
+Teller: 1
+Customer: 1
+Arrival Time: 11:37:40
+Response Time: 11:37:40
+
+Teller: 1
+Customer: 1
+Arrival Time: 11:37:40
+Completion Time: 11:37:43
+
+Teller: 1
+Customer: 2
+Arrival Time: 11:37:43
+Response Time: 11:37:43
+
+Teller: 1
+Customer: 2
+Arrival Time: 11:37:43
+Completion Time: 11:37:47
+
+Teller: 2
+Customer: 3
+Arrival Time: 11:37:47
+Response Time: 11:37:47
+
+Teller: 2
+Customer: 3
+Arrival Time: 11:37:47
+Completion Time: 11:37:50
+
+Teller: 2
+Customer: 4
+Arrival Time: 11:37:50
+Response Time: 11:37:50
+
+Teller: 2
+Customer: 4
+Arrival Time: 11:37:50
+Completion Time: 11:37:54
+
+Teller: 3
+Customer: 5
+Arrival Time: 11:37:54
+Response Time: 11:37:54
+
+Teller: 3
+Customer: 5
+Arrival Time: 11:37:54
+Completion Time: 11:37:57
+
+Teller: 3
+Customer: 6
+Arrival Time: 11:37:57
+Response Time: 11:37:57
+
+Teller: 3
+Customer: 6
+Arrival Time: 11:37:57
+Completion Time: 11:37:59
+
+Teller: 3
+Customer: 7
+Arrival Time: 11:37:59
+Response Time: 11:37:59
+
+Teller: 3
+Customer: 7
+Arrival Time: 11:37:59
+Completion Time: 11:38:03
+
+Teller: 3
+Customer: 8
+Arrival Time: 11:38:03
+Response Time: 11:38:03
+
+Teller: 3
+Customer: 8
+Arrival Time: 11:38:03
+Completion Time: 11:38:06
+
+Teller: 3
+Customer: 9
+Arrival Time: 11:38:06
+Response Time: 11:38:06
+
+Teller: 3
+Customer: 9
+Arrival Time: 11:38:06
+Completion Time: 11:38:10
+
+Teller: 3
+Customer: 10
+Arrival Time: 11:38:10
+Response Time: 11:38:10
+
+Teller: 3
+Customer: 10
+Arrival Time: 11:38:10
+Completion Time: 11:38:12
+
+Termination: Teller-3
+#served customers: 6
+Termination Time: 11:38:12
+
+Termination: Teller-2
+#served customers: 2
+Termination Time: 11:38:12
+
+Termination: Teller-1
+#served customers: 2
+Termination Time: 11:38:12
+
+Termination: Teller-4
+#served customers: 0
+Termination Time: 11:38:12
+
+Teller Statistic
+Teller-1 serves 2 customers.
+Teller-2 serves 2 customers.
+Teller-3 serves 6 customers.
+Teller-4 serves 0 customers.
+
+Total number of customers: 10 customers.
